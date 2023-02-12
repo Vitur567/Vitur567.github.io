@@ -57,6 +57,7 @@ img{
     border: 2px;
     border-color: rgba(99, 72, 209, 0.513);
     border-style: solid;
+    height: 153px ;
 }
 .image_seventh{
     position: absolute;
@@ -89,7 +90,7 @@ padding: 5px;
 .container1{
     width: 1200px;
     height: 850px;
-    background-color: rgb(159, 166, 167);
+    background-color: rgb(130, 246, 227);
   margin-left: 200px;
   margin-top: -15px;
 }
@@ -167,14 +168,5 @@ padding: 5px;
         font-size: 10px;
         font-style: italic;
         font-weight: 900;
-        background-color:aliceblue;
-        position: absolute;
-        text-align: center;
-    }
-    img.map{
-        width: 500px;
-        height: 400px;
-    }
-    .subtext{
-        background-color:aliceblue;
+        background-color:aliceblue
     }
