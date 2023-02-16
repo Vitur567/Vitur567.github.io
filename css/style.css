@@ -4,7 +4,7 @@ body{
    height: 900px;
 }
 .container{
-    width: 1200px;
+    width: 1400px;
     height: 800px;
     background-image:url(../img/1.jpg);
     background-size: 100% 100%;
@@ -38,10 +38,11 @@ nav ul li {
 nav a {
     display:block;
     padding:0 10px;
-    color:#FFF;
-    font-size:20px;
+    color:#ff3f3f;
+    font-size:40px;
     line-height: 60px;
     text-decoration:none;
+   font-weight: bold;
 }
 
 /* изменяем цвет фона при наведении курсора */
@@ -147,7 +148,7 @@ nav a:hover {
 .th{background-color:black;top: -450px;}
             ul.fer{
                 background-color:black;
-                width: 450px;
+                width: 550px;
             }
             img{
                 width: 760px;
