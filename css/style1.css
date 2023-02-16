@@ -102,11 +102,11 @@ img{
         @media(max-width:369px) {
             body{
                 min-width: 364px;
-                height: 500px;
+                height: 250px;
             }
             .container{
                 width: 364px;
-                height: 500px;
+                height: 250px;
                 background-image:url(../img/1.jpg);
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
@@ -124,6 +124,8 @@ img{
                 margin:0;
                 list-style: none;
                 position: relative;
+                top:-250px;
+                left: -100px;
                 }
             
             /* применяем inline-block позиционирование к элементам навигации */
@@ -154,9 +156,9 @@ img{
                     margin: 0px;
                     background-color:black;
                 } 
-.fe{background-color:black;width: 400px;top: -450px;} 
-.se{background-color:black;top: -450px;} 
-.th{background-color:black;top: -450px;}
+.fe{background-color:black;width: 200px;top: -70px;left: 202px;} 
+.se{background-color:black;top: -70px;left: 202px;} 
+.th{background-color:black;top: -70px;left: 202px;}
             ul.fer{
                 background-color:black;
                 width: 550px;
@@ -170,8 +172,8 @@ img{
                 display:block;
                 padding:0 10px;
                 color:#f51b1b;
-                font-size:60px;
-                line-height: 100px;
+                font-size:20px;
+                line-height: 25px;
                 text-decoration:none;
             }
             
