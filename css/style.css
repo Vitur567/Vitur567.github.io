@@ -95,7 +95,10 @@ nav a:hover {
 ul.fer{
     width: 400px;
 }
-
+img{
+    width: 400px;
+    height: 600px;
+}
         @media(max-width:369px) {
             /* body{
                 min-width: 1200px;
@@ -159,8 +162,8 @@ ul.fer{
                 width: 550px;
             }
             img{
-                width: 760px;
-                height: 500px;
+                width: 400px;
+                height: 300px;
             }
             /* стилизуем ссылки */
             nav a {
