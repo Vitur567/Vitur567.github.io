@@ -1,82 +1,140 @@
-*{box-sizing: border-box;}
-img{
-    width: 500px;
-    height: 400px;
+/* задаем цвет фона для контейнера nav. */
+nav {
+    margin: 100px 0;
+    background-color: #E64A19;
+}
 
-}
-ul {
+/* убираем отступы и поля, а также list-style для "ul", 
+ * и добавляем "position:relative" */
+nav ul {
+    padding:0;
+    margin:0;
     list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  a {text-decoration: none;}
-  .top>li{
-    display: inline-block;
-  }
-  .top{
     position: relative;
-  }
-  .top > li > a {
-    display: block;
-    padding: 18px;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #000;
-    transition: .2s linear;
-  }
-  .top > li > a:hover {color: #30b054;}
-  .dropdown:after {
-    content: "\f107";
-    font-family: FontAwesome;
-    margin-left: 4px;
-    vertical-align: top;
-  }
-  .submenu-start {
-    border-top: 1px solid #e5e5e5;
-    box-shadow: 0 3px 5px 0 rgba(0,0,0,.07);
-    background: white;
-    padding: 25px 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 5;
-    opacity: 0;
-    visibility: hidden;    /* Скрываем выпадающее меню */
-    transform: translate3d(0,30px,0);
-    transition: .5s ease-out;
-    transform-origin: 0% 0%;
-  }
-  .dropdown-start {position: relative;}
-  .top > li:hover .submenu-start {
-    opacity: 1;
-    visibility: visible;      /*  Откраваем выпадающее меню */
-    transform: translate3d(0,0,0);
-  }
-  
-.submenu-start {
-  min-width: 200px;
-  padding: 20px 0;
-  background-color: beige;
+    }
+
+/* применяем inline-block позиционирование к элементам навигации */
+nav ul li {
+    margin: 0px -7px 0 0;
+    display:inline-block;
+    background-color: #E64A19;
+    }
+
+/* стилизуем ссылки */
+nav a {
+    display:block;
+    padding:0 10px;
+    color:#FFF;
+    font-size:20px;
+    line-height: 60px;
+    text-decoration:none;
 }
-@media(max-width:768px) {
-    .top li {
-      width: 100%;
-      height: auto!important;
-    }
-    .top > li {border-bottom: 1px solid #e5e5e5;}
-    .top > li > a {padding: 18px}
-    
-    .submenu-start {
-      position: relative;
-      display: none;
-      box-shadow: none;
-      padding: 0;
-      background: rgba(0,0,0,.02);
-    }
-    .submenu-start {padding: 10px 0;}
-   
-    
-    .top > li:hover .submenu,
-    .top > li:hover .submenu-start {display: block;}
-  }
+
+/* изменяем цвет фона при наведении курсора */
+nav a:hover {
+    background-color: #000000;
+}
+/* =========================================================================== */
+
+/* скрываем выпадающие списки по умолчанию
+			 * и задаем абсолютное позиционирование */
+             nav ul ul {
+			    display: none;
+			    position: absolute;
+			    top: 100%;
+			}
+			
+			/* отображаем выпадающий список при наведении */
+			nav ul li:hover > ul {
+			    display:inherit;
+			}
+			
+			/* первый уровень выпадающего списка */
+			nav ul ul li {
+			    min-width:170px;
+			    float:none;
+			    display:list-item;
+			    position: relative;
+			}
+            /* ============================================ */
+            /* измените ' +' на любой другой символ, если нужно*/
+	
+			li > a:after { content:  ' +'; }
+            li > a:only-child:after { content: ''; }/* измените ' +' на любой другой символ, если нужно
+         =========================================================== */
+            /* второй, третий и последующие уровни 
+			 * смещаем 2 и 3 уровни влево 
+			 * на значение длины первого уровня.*/
+			
+			nav ul ul ul {
+			    position: absolute;
+			    top:0;
+			    left:100%;
+		}
+        @media(max-width:768px) {
+            nav {
+                margin: 10px 0;
+                background-color: #E64A19;
+            }
+            
+            /* убираем отступы и поля, а также list-style для "ul", 
+             * и добавляем "position:relative" */
+            nav ul {
+                padding:0;
+                margin:0;
+                list-style: none;
+                position: relative;
+                }
+            
+            /* применяем inline-block позиционирование к элементам навигации */
+            nav ul li {
+                margin: 0px -7px 0 0;
+                display:table;
+                background-color: #E64A19;
+                top: -240px;
+                left: 140px;
+                }
+                .thred{
+                    position: absolute;
+                    top:120px;
+                    left: 5px;
+                    margin: 0px;
+                    background-color:black;
+                } 
+                .second{
+                    position: absolute;
+                    top:60px;
+                    left: 5px;
+                    background-color:black;
+                } 
+                .ferst{
+                    position: absolute;
+                    top:0px;
+                    left: 5px;
+                    margin: 0px;
+                    background-color:black;
+                } 
+.fe{background-color:black;} .se{background-color:black;} .th{background-color:black;}
+            ul.fer{
+                background-color:black;
+            }
+            img{
+                width: 760px;
+                height: 500px;
+            }
+            /* стилизуем ссылки */
+            nav a {
+                display:block;
+                padding:0 10px;
+                color:#FFF;
+                font-size:20px;
+                line-height: 60px;
+                text-decoration:none;
+            }
+            
+            /* изменяем цвет фона при наведении курсора */
+            nav a:hover {
+                background-color: #000000;
+            }
+           
+          }
