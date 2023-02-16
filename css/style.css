@@ -25,6 +25,7 @@ nav ul {
     margin:0;
     list-style: none;
     position: relative;
+    text-align: center;
     }
 
 /* применяем inline-block позиционирование к элементам навигации */
@@ -43,6 +44,7 @@ nav a {
     line-height: 60px;
     text-decoration:none;
    font-weight: bold;
+   
 }
 
 /* изменяем цвет фона при наведении курсора */
