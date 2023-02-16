@@ -14,6 +14,7 @@ body{
 nav {
     margin: 10px 0;
     padding: 100px;
+    padding-top: 300px;
     /* background-color: #E64A19; */
     
 }
@@ -59,6 +60,9 @@ nav a:hover {
 			    display: none;
 			    position: absolute;
 			    top: 100%;
+                transform: translate3d(-10px,-10px,0);
+                transition: .5s ease-out;
+                /* transform-origin: 0% 0%; */
 			}
 			
 			/* отображаем выпадающий список при наведении */
@@ -76,7 +80,7 @@ nav a:hover {
             /* ============================================ */
             /* измените ' +' на любой другой символ, если нужно*/
 	
-			li > a:after { content:  '^'; background-color:coral}
+			li > a:after { content:  '^'; background-color:coral;color:rgb(0, 255, 255);border-radius: 50%;border-style: solid;border-width: 0px;}
             li > a:only-child:after { content: ''; }/* измените ' +' на любой другой символ, если нужно
          =========================================================== */
             /* второй, третий и последующие уровни 
