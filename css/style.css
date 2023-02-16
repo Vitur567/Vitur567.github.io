@@ -1,7 +1,21 @@
+body{
+    /* background-color: #000; */
+   min-width: 1200px;
+   height: 900px;
+}
+.container{
+    width: 1200px;
+    height: 800px;
+    background-image:url(../img/1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 /* задаем цвет фона для контейнера nav. */
 nav {
-    margin: 100px 0;
-    background-color: #E64A19;
+    margin: 10px 0;
+    padding: 100px;
+    /* background-color: #E64A19; */
+    
 }
 
 /* убираем отступы и поля, а также list-style для "ul", 
@@ -17,7 +31,7 @@ nav ul {
 nav ul li {
     margin: 0px -7px 0 0;
     display:inline-block;
-    background-color: #E64A19;
+  /*   background-color: #E64A19; */
     }
 
 /* стилизуем ссылки */
@@ -71,10 +85,18 @@ nav a:hover {
 			    top:0;
 			    left:100%;
 		}
+
+
         @media(max-width:768px) {
+            body{background:url(img/1jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                z-index: 5;
+            }
             nav {
                 margin: 10px 0;
-                background-color: #E64A19;
+               /*  background-color: #E64A19; */
+                z-index: 1;
             }
             
             /* убираем отступы и поля, а также list-style для "ul", 
@@ -90,7 +112,7 @@ nav a:hover {
             nav ul li {
                 margin: 0px -7px 0 0;
                 display:table;
-                background-color: #E64A19;
+              /*   background-color: #E64A19; */
                 top: -240px;
                 left: 140px;
                 }
