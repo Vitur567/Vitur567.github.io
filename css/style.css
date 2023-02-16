@@ -88,11 +88,17 @@ nav a:hover {
 
 
         @media(max-width:768px) {
-            body{background:url(img/1jpg);
+            /* body{
+                min-width: 1200px;
+                height: 500px;
+            }
+            .container{
+                width: 760px;
+                height: 500px;
+                background-image:url(../img/1.jpg);
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
-                z-index: 5;
-            }
+            } */
             nav {
                 margin: 10px 0;
                /*  background-color: #E64A19; */
@@ -114,7 +120,7 @@ nav a:hover {
                 display:table;
               /*   background-color: #E64A19; */
                 top: -240px;
-                left: 140px;
+                left: 360px;
                 }
                 .thred{
                     position: absolute;
@@ -149,7 +155,7 @@ nav a:hover {
                 display:block;
                 padding:0 10px;
                 color:#FFF;
-                font-size:20px;
+                font-size:60px;
                 line-height: 60px;
                 text-decoration:none;
             }
