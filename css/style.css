@@ -124,14 +124,14 @@ nav a:hover {
                 }
                 .thred{
                     position: absolute;
-                    top:120px;
+                    top:160px;
                     left: 5px;
                     margin: 0px;
                     background-color:black;
                 } 
                 .second{
                     position: absolute;
-                    top:60px;
+                    top:80px;
                     left: 5px;
                     background-color:black;
                 } 
@@ -142,9 +142,12 @@ nav a:hover {
                     margin: 0px;
                     background-color:black;
                 } 
-.fe{background-color:black;} .se{background-color:black;} .th{background-color:black;}
+.fe{background-color:black;width: 400px;top: -450px;} 
+.se{background-color:black;top: -450px;} 
+.th{background-color:black;top: -450px;}
             ul.fer{
                 background-color:black;
+                width: 450px;
             }
             img{
                 width: 760px;
@@ -154,9 +157,9 @@ nav a:hover {
             nav a {
                 display:block;
                 padding:0 10px;
-                color:#FFF;
+                color:#f51b1b;
                 font-size:60px;
-                line-height: 60px;
+                line-height: 100px;
                 text-decoration:none;
             }
             
