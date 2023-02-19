@@ -1,183 +1,214 @@
-body{
-    /* background-color: #000; */
-   min-width: 1200px;
-   height: 900px;
+*{
+    box-sizing: border-box;      /*   ширина и высота с учетом марж. падд. */
+    margin: 0px;
+    padding: 0px;
 }
 .container{
-    width: 1400px;
-    height: 800px;
-    background-image:url(../img/1.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    width: 1140px;
+    margin: 0 auto;       /* выравниваем контейнер по центру */
 }
-/* задаем цвет фона для контейнера nav. */
-nav {
-    margin: 10px 0;
-    padding: 100px;
-    padding-top: 300px;
-    /* background-color: #E64A19; */
-    
-}
-
-/* убираем отступы и поля, а также list-style для "ul", 
- * и добавляем "position:relative" */
-nav ul {
-    padding:0;
-    margin:0;
-    list-style: none;
-    position: relative;
+.promo{
+    height: 800px;                       /*  флеш обязательно а то изобр. на появит. */
+    background: url('../img/IMG_20221229_130123.jpg') center center/cover no-repeat;
+    padding: 30px 0px 62px 0px;
+}                                                 
+.logo .logo_img{
+    display: block;          /*    display: block; т.к. img строчн. элем. */
+   margin: 0 auto;              /*  логотип по центру */
+   width: 70px;
+}   
+.logo .logo_text{
+    color: #ff0909;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
     text-align: center;
-    }
+    margin-top: 14px;
+} 
+h1{
+    margin-top: 53px ;
+}    
+.title{
+    color: #f9bf3b;
+    font-family: "Roboto - Black";
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}  
+h2.title{
+    margin-top: 10px;
+}
+.simple .title_big{
+    color: #ffffff;
+    font-family: "Roboto - Black";
+    font-size: 80px;
+    font-weight: 400;
+   text-align: center;
+   margin-top: 11px;
+    text-transform: uppercase;
+} 
+.promo .promo_btn{
+    display: block;
+    margin: 73px auto;  /*   устанавливаем кнопку по центру по верт.73  по горизонт. auto */ 
+    width: 313px;
+    height: 72px;
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);  /* это тень  */
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    background-image: linear-gradient(to top, #267a93 0%, #45d7ff 100%);         /* градиент */
+    color:#ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}  
+.more{
+    margin-top: 33px;
+}   
+.more .more_text{
+    color: #ffffff;
+    font-family: "Rjboto - Thin";
+    font-size: 15px;
+    font-weight: 400;
+   text-align: center;
+    text-transform: uppercase;
+} 
+.more .more_img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 23px;
+}  
 
-/* применяем inline-block позиционирование к элементам навигации */
-nav ul li {
-    margin: 0px -7px 0 0;
-    display:inline-block;
-  /*   background-color: #E64A19; */
-    }
+.waiting{
+    height: 1208px;
+    background-color: rgb(166, 192, 192);
+    padding: 85px 0 75px 0;
+}   
+.more1 .more_img1{
+    display: block;
+    margin: 0 auto;
+     margin-bottom: 13px; 
+   /*  margin-left: 136px;  */
+    width: 100px;
+    border-radius: 20%;
+    transform: rotate(2deg);
+    
+}  
 
-/* стилизуем ссылки */
-nav a {
-    display:block;
-    padding:0 10px;
-    color:#ff3f3f;
-    font-size:40px;
-    line-height: 60px;
-    text-decoration:none;
-   font-weight: bold;
+.waiting .waiting_header{
+    color: #000;
+    font-family: Roboto;
+    font-weight: 400;
+   
+    text-transform: uppercase;
+    text-align: center;
+}  
+.waiting .waiting_divider{
+    width: 217px;
+    height: 4px;
+    background-color:#f9bf3b;
+     margin: 0 auto;
+     margin-top: 18px; 
+}   
+.waiting .waiting_subheader{
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 17px;
+}  
+.waiting .waiting_wrapper{
+    margin-top: 45px;
+}  
+.waiting .waiting_wrapper .waiting_item{
+    display: inline-block;
+     vertical-align: top;
+    width: 200px;
+   /*  margin: 0 auto; */
+   position: relative;
+    text-align: center;
+    margin: 0 87px;
+    
+}                       
+.waiting_img {
+   width: 100%;
+   height: 300px;
+}
+.sport{
+    width: 100%;
+    height: 150px; 
+}
+.waiting_descr{
+    margin-top: 33px;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    background-color:#ffffff
+}
+.raund{
+    position: absolute;
+    top: 330px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    background-color:#f9bf3b;
+    border-radius: 50%;
+    border-width: 0px;
    
 }
 
-/* изменяем цвет фона при наведении курсора */
-nav a:hover {
-    background-color: #000000;
+@media(max-width:379px) {
+    body{
+        min-width: 374px;
+        height: 950px;
+    }
+    .container{
+        width: 364px;
+        height: 1950px;
+        
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
 }
-/* =========================================================================== */
+.waiting{
+    height: 3208px;
+    background-color: azure;
+    padding: 85px 0 75px 0;
+}
+/* .more .more_img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 23px;
 
-/* скрываем выпадающие списки по умолчанию
-			 * и задаем абсолютное позиционирование */
-             nav ul ul {
-			    display: none;
-			    position: absolute;
-			    top: 100%;
-                transform: translate3d(-10px,-10px,0);
-                transition: .5s ease-out;
-                /* transform-origin: 0% 0%; */
-			}
-			
-			/* отображаем выпадающий список при наведении */
-			nav ul li:hover > ul {
-			    display:inherit;
-			}
-			
-			/* первый уровень выпадающего списка */
-			nav ul ul li {
-			    min-width:170px;
-			    float:none;
-			    display:list-item;
-			    position: relative;
-			}
-            /* ============================================ */
-            /* измените ' +' на любой другой символ, если нужно*/
-	
-			li > a:after { content:  '^'; background-color:coral;color:rgb(0, 255, 255);border-radius: 50%;border-style: solid;border-width: 0px;}
-            li > a:only-child:after { content: ''; }/* измените ' +' на любой другой символ, если нужно
-         =========================================================== */
-            /* второй, третий и последующие уровни 
-			 * смещаем 2 и 3 уровни влево 
-			 * на значение длины первого уровня.*/
-			
-			nav ul ul ul {
-			    position: absolute;
-			    top:0;
-			    left:100%;
-		}
-ul.fer{
-    width: 400px;
+} */
+.waiting_descr{
+    margin-top: 3px;
+    margin-bottom: 30px ;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    background-color:#ffffff
+} 
+.raund{
+    position: absolute;
+    top: 300px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    background-color:#f9bf3b;
+    border-radius: 50%;
+    border-width: 0px;
+   
+} 
+
 }
-img{
-    width: 400px;
-    height: 600px;
-}
-        @media(max-width:369px) {
-            /* body{
-                min-width: 1200px;
-                height: 500px;
-            }
-            .container{
-                width: 760px;
-                height: 500px;
-                background-image:url(../img/1.jpg);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-            } */
-            nav {
-                margin: 10px 0;
-               /*  background-color: #E64A19; */
-                z-index: 1;
-            }
-            
-            /* убираем отступы и поля, а также list-style для "ul", 
-             * и добавляем "position:relative" */
-            nav ul {
-                padding:0;
-                margin:0;
-                list-style: none;
-                position: relative;
-                }
-            
-            /* применяем inline-block позиционирование к элементам навигации */
-            nav ul li {
-                margin: 0px -7px 0 0;
-                display:table;
-              /*   background-color: #E64A19; */
-                top: -240px;
-                left: 360px;
-                }
-                .thred{
-                    position: absolute;
-                    top:160px;
-                    left: 5px;
-                    margin: 0px;
-                    background-color:black;
-                } 
-                .second{
-                    position: absolute;
-                    top:80px;
-                    left: 5px;
-                    background-color:black;
-                } 
-                .ferst{
-                    position: absolute;
-                    top:0px;
-                    left: 5px;
-                    margin: 0px;
-                    background-color:black;
-                } 
-.fe{background-color:black;width: 400px;top: -450px;} 
-.se{background-color:black;top: -450px;} 
-.th{background-color:black;top: -450px;}
-            ul.fer{
-                background-color:black;
-                width: 550px;
-            }
-            img{
-                width: 400px;
-                height: 300px;
-            }
-            /* стилизуем ссылки */
-            nav a {
-                display:block;
-                padding:0 10px;
-                color:#f51b1b;
-                font-size:60px;
-                line-height: 100px;
-                text-decoration:none;
-            }
-            
-            /* изменяем цвет фона при наведении курсора */
-            nav a:hover {
-                background-color: #000000;
-            }
-           
-          }
