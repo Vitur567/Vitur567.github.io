@@ -84,7 +84,7 @@ h2.title{
 }  
 
 .waiting{
-    height: 1208px;
+    height: 1708px;
     background-color: rgb(166, 192, 192);
     padding: 85px 0 75px 0;
 }   
@@ -150,12 +150,13 @@ h2.title{
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
-    background-color:#ffffff
+    background-color:#ffffff;
+    margin: 0 5px;
 }
 .raund{
     position: absolute;
-    top: 330px;
-    left: -10px;
+    top: 300px;
+    left: -7px;
     width: 20px;
     height: 20px;
     border-style: solid;
@@ -164,7 +165,37 @@ h2.title{
     border-width: 0px;
    
 }
+            /*  ==============Разметка флексами=========== */
+          
+.my-flex-container{
+    display: flex;
+    height: 450px;
+    /* justify-content: center; */     /* выравнивает все блоки по центру */
+   /*  justify-content: space-between;  */  /*  элементы распределяются по всей ширине родительского блока */   
+   justify-content: space-around;      /*  выравнивает с отступами */
+    margin-top: 22px;
+    
+}
 
+.my-flex-block{
+  /*   width: 150px;
+    height: 150px; */
+   /*  background-color:#ff0909; */
+    text-align: center;
+    color: #373434;
+}
+.waiting_imgmy{
+    width: 250px;
+    height: 364px;
+    margin: 0 5px;
+}
+.plus{
+    width: 490px;
+    height: 364px;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @media(max-width:379px) {
     body{
         min-width: 374px;
@@ -178,8 +209,8 @@ h2.title{
         background-repeat: no-repeat;
 }
 .waiting{
-    height: 3208px;
-    background-color: azure;
+    height: 5008px;
+    background-color: rgb(184, 230, 230);
     padding: 85px 0 75px 0;
 }
 /* .more .more_img{
@@ -196,12 +227,14 @@ h2.title{
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
-    background-color:#ffffff
+    background-color:#ffffff;
+    margin: 0 45px;
+   
 } 
 .raund{
     position: absolute;
     top: 300px;
-    left: -10px;
+    left: 35px;
     width: 20px;
     height: 20px;
     border-style: solid;
@@ -211,4 +244,38 @@ h2.title{
    
 } 
 
+.my-flex-container{
+     display: block;
+     flex-direction: column;           /* cтавит блоки в колонку */ /*  когда displai: flex; установлен */
+    height: 450px;
+    /* justify-content: center; */     /* выравнивает все блоки по центру */
+   /*  justify-content: space-between;  */  /*  элементы распределяются по всей ширине родительского блока */   
+   /* justify-content: space-around;    */   /*  выравнивает с отступами */
+    margin-top: 22px;
+   /*  align-items: center; */
 }
+
+.my-flex-block{
+    width: 364px;
+    height: 400px;
+    
+    text-align: center;
+    color: #000;
+}
+.waiting_imgmy{
+    width: 300px;
+    height: 364px;
+    margin: 0 20px;
+}
+.plus{
+    height: 264px;
+    margin: 40px 0 0 0;
+}
+.plus_descr{
+    margin: 0 50px 0px 50px;
+}
+
+
+}
+
+

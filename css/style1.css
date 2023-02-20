@@ -33,7 +33,7 @@ h1{
 .title{
     color: #f9bf3b;
     font-family: "Roboto - Black";
-    font-weight: 400;
+    font-weight: bold;
     line-height: 24px;
     text-transform: uppercase;
     text-align: center;
@@ -67,7 +67,7 @@ h2.title{
     cursor: pointer;
 }  
 .more{
-    margin-top: 73px;
+    margin-top: 33px;
 }   
 .more .more_text{
     color: #ffffff;
@@ -80,20 +80,25 @@ h2.title{
 .more .more_img{
     display: block;
     margin: 0 auto;
-    margin-top: 13px;
+    margin-top: 23px;
 }  
+
+.waiting{
+    height: 1408px;
+    background-color: rgb(166, 192, 192);
+    padding: 85px 0 75px 0;
+}   
 .more1 .more_img1{
     display: block;
     margin: 0 auto;
-    margin-top: 13px;
-    width: 200px;
-    background-color:#f9bf3b
+     margin-bottom: 13px; 
+   /*  margin-left: 136px;  */
+    width: 100px;
+    border-radius: 20%;
+    transform: rotate(2deg);
+    
 }  
-.waiting{
-    height: 1208px;
-    background-color: azure;
-    padding: 85px 0 75px 0;
-}   
+
 .waiting .waiting_header{
     color: #000;
     font-family: Roboto;
@@ -125,7 +130,7 @@ h2.title{
      vertical-align: top;
     width: 200px;
    /*  margin: 0 auto; */
-  
+   position: relative;
     text-align: center;
     margin: 0 87px;
     
@@ -133,6 +138,10 @@ h2.title{
 .waiting_img {
    width: 100%;
    height: 300px;
+}
+.sport{
+    width: 100%;
+    height: 150px; 
 }
 .waiting_descr{
     margin-top: 33px;
@@ -142,4 +151,113 @@ h2.title{
     font-weight: 300;
     line-height: 21px;
     background-color:#ffffff
+}
+.raund{
+    position: absolute;
+    top: 330px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    background-color:#f9bf3b;
+    border-radius: 50%;
+    border-width: 0px;
+   
+}
+            /*  ==============Разметка флексами=========== */
+          
+.my-flex-container{
+    display: flex;
+    height: 450px;
+    /* justify-content: center; */     /* выравнивает все блоки по центру */
+   /*  justify-content: space-between;  */  /*  элементы распределяются по всей ширине родительского блока */   
+   justify-content: space-around;      /*  выравнивает с отступами */
+    margin-top: 22px;
+    
+}
+
+.my-flex-block{
+  /*   width: 150px;
+    height: 150px; */
+   /*  background-color:#ff0909; */
+    text-align: center;
+    color: #373434;
+}
+.waiting_imgmy{
+    width: 250px;
+    height: 364px;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media(max-width:379px) {
+    body{
+        min-width: 374px;
+        height: 950px;
+    }
+    .container{
+        width: 364px;
+        height: 1950px;
+        
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+}
+.waiting{
+    height: 3208px;
+    background-color: azure;
+    padding: 85px 0 75px 0;
+}
+/* .more .more_img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 23px;
+
+} */
+.waiting_descr{
+    margin-top: 3px;
+    margin-bottom: 30px ;
+    color: #4a4a4a;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    background-color:#ffffff
+} 
+.raund{
+    position: absolute;
+    top: 300px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+    background-color:#f9bf3b;
+    border-radius: 50%;
+    border-width: 0px;
+   
+} 
+
+.my-flex-container{
+     display: block;
+     flex-direction: column;           /* cтавит блоки в колонку */ /*  когда displai: flex; установлен */
+    height: 450px;
+    /* justify-content: center; */     /* выравнивает все блоки по центру */
+   /*  justify-content: space-between;  */  /*  элементы распределяются по всей ширине родительского блока */   
+   /* justify-content: space-around;    */   /*  выравнивает с отступами */
+    margin-top: 22px;
+   /*  align-items: center; */
+}
+
+.my-flex-block{
+    width: 364px;
+    height: 400px;
+    
+    text-align: center;
+    color: #000;
+}
+.waiting_imgmy{
+    width: 364px;
+    height: 364px;
+}
+
+
 }
