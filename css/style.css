@@ -204,7 +204,8 @@ h2.title{
     .container{
         width: 364px;
         height: 1950px;
-        
+       
+        z-index: 1;
         background-size: 100% 100%;
         background-repeat: no-repeat;
 }
@@ -274,7 +275,52 @@ h2.title{
 .plus_descr{
     margin: 0 50px 0px 50px;
 }
-
+li{
+    background-color: yellow;
+    padding: 0 0 0 0px;
+    width: 100px;  
+}
+ul{
+    margin-right: 200px;  
+}
+nav{
+    display: none;
+    position: absolute;
+    margin-top: -700px;
+    line-height: 40px;
+    top: 720px;
+    width: 100px;
+    transform: translate3d(0,700px,0); transition: .7s ease-out;
+                 transform-origin: 0% 0%;
+}
+ .gamburger{
+    position: relative;
+    width: 100px;
+    height: 20px;
+    margin-left: 50px;
+    background-color:#f9bf3b;
+    margin-left: 20px;
+    background-color: #f9bf3b;
+    top: -820px;
+    
+ }
+ .gamburger:hover{
+    background-color:#ff0909;
+ }
+.gamburger:hover>nav{
+    display: inherit;
+    transform: translate3d(0,0,0);
+                transition: .7s ease-out;
+}
+.gamburger:hover{
+    background-color:#ff0909;
+}
+a{
+    padding-left: 10px;   
+}
+p{
+    text-align: center;
+}
 
 }
 
