@@ -209,6 +209,9 @@ h2.title{
         background-size: 100% 100%;
         background-repeat: no-repeat;
 }
+.my1{
+    margin-top: 550px;
+}
 .waiting{
     height: 5008px;
     background-color: rgb(184, 230, 230);
@@ -258,41 +261,44 @@ h2.title{
 
 .my-flex-block{
     width: 364px;
-    height: 400px;
+    height: 250px;
     
     text-align: center;
     color: #000;
 }
 .waiting_imgmy{
     width: 300px;
-    height: 364px;
+    height: 200px;
     margin: 0 20px;
 }
-.plus{
-    height: 264px;
-    margin: 40px 0 0 0;
-}
-.plus_descr{
-    margin: 0 50px 0px 50px;
-}
-li{
+
+ul li{
+    overflow: hidden;
     background-color: yellow;
     padding: 0 0 0 0px;
     width: 100px;  
+    transition: all 300ms ease-in-out;
 }
 ul{
-    margin-right: 200px;  
+    margin-right: 200px;
+    list-style-type: none;  
 }
 nav{
-    display: block;
+    display: none;
     position: absolute;
     margin-top: -700px;
-    line-height: 40px;
+    line-height: 60px;
     top: 720px;
+    /* right: 200px; */
     width: 100px;
-    transform: translate3d(0,700px,0); transition: .7s ease-out;
-                 transform-origin: 0% 0%;
+    
+    transition: all .5s ease-in-out;
+   
+   /*  transform: translate3d(0,700px,0); transition: .7s ease-out;
+
+                 transform-origin: 0% 0%; */
 }
+
  .gamburger{
     position: relative;
     width: 100px;
@@ -302,21 +308,32 @@ nav{
     margin-left: 20px;
     background-color: #f9bf3b;
     top: -820px;
-    
+   
+                
  }
- .gamburger:hover{
-    background-color:#ff0909;
- }
+ 
 .gamburger:hover>nav{
-    display: inherit;
-    transform: translate3d(0,0,0);
-                transition: .7s ease-out;
+    display: block;
+   /*  transform: rotate(0deg); */
+   
+                opacity: 0.5;
 }
 .gamburger:hover{
-    background-color:#ff0909;
+    background-color:#ff1b1b;
+    transform:rotate(360deg) ;
+    transition: all .9s ease-in-out;
 }
+
 a{
-    padding-left: 10px;   
+    padding-left: 10px;  
+    font-weight: bold; 
+    text-decoration: none;
+   
+}
+li a:hover{
+background-color:fuchsia;
+     transform:rotate(360deg) ;
+    transition: all .9s ease-in-out;
 }
 p{
     text-align: center;
