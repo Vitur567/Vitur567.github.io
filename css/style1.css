@@ -327,7 +327,8 @@ nav a{
     background-color:#ff1b1b;
 }
 a{
-    padding-left: 10px;   
+    padding-left: 10px;  
+    font-weight: bold; 
 }
 p{
     text-align: center;
