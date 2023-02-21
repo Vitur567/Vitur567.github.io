@@ -185,13 +185,16 @@ h2.title{
     color: #373434;
 }
 .waiting_imgmy{
-    width: 250px;
-    height: 364px;
+    width: 330px;
+    height: 200px;
     margin: 0 5px;
 }
 .plus{
     width: 490px;
     height: 364px;
+}
+.my1{
+    margin: -230px 0 0 0; 
 }
 
 
@@ -211,6 +214,11 @@ h2.title{
 }
 .my1{
     margin-top: 550px;
+}
+.more .more_img{
+    display: block;
+    margin: 0 auto;
+    margin-top: -15px;
 }
 .waiting{
     height: 5008px;
@@ -307,11 +315,14 @@ nav{
     background-color:#f9bf3b;
     margin-left: 20px;
     background-color: #f9bf3b;
-    top: -820px;
+    top: -800px;
    
                 
  }
- 
+ #fixmenu{
+    position: fixed; /*фиксированное положение*/
+    z-index: 100; /*ориентация выше всех*/
+ }
 .gamburger:hover>nav{
     display: block;
    /*  transform: rotate(0deg); */

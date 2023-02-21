@@ -193,6 +193,9 @@ h2.title{
     width: 490px;
     height: 364px;
 }
+.my1{
+    margin-top: -60px;
+}
 
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -211,6 +214,11 @@ h2.title{
 }
 .my1{
     margin-top: 1080px;
+}
+.more .more_img{
+    display: block;
+    margin: 0 auto;
+    margin-top: -15px;
 }
 .waiting{
     height: 5008px;
@@ -313,9 +321,13 @@ nav{
     background-color:#f9bf3b;
     margin-left: 20px;
     background-color: #f9bf3b;
-    top: -820px;
+    top: -800px;
    
                 
+ }
+ #fixmenu{
+    position: fixed; /*фиксированное положение*/
+    z-index: 100; /*ориентация выше всех*/
  }
  
 .gamburger:hover>nav{
