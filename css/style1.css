@@ -294,15 +294,14 @@ nav{
     top: 720px;
     /* right: 200px; */
     width: 100px;
+    
     transition: all .5s ease-in-out;
    
    /*  transform: translate3d(0,700px,0); transition: .7s ease-out;
 
                  transform-origin: 0% 0%; */
 }
-nav a{
-    text-decoration: none;
-}
+
  .gamburger{
     position: relative;
     width: 100px;
@@ -312,23 +311,30 @@ nav a{
     margin-left: 20px;
     background-color: #f9bf3b;
     top: -820px;
-    
+   
+                
  }
- .gamburger:hover{
-    background-color:#ff0909;
- }
+ 
 .gamburger:hover>nav{
     display: block;
    /*  transform: rotate(0deg); */
-               
+   
                 opacity: 0.5;
 }
 .gamburger:hover{
     background-color:#ff1b1b;
+    transform:rotate(360deg) ;
+    transition: all .9s ease-in-out;
 }
+
 a{
     padding-left: 10px;  
     font-weight: bold; 
+   
+}
+a:hover{
+     transform:rotate(360deg) ;
+    transition: all .9s ease-in-out;
 }
 p{
     text-align: center;
