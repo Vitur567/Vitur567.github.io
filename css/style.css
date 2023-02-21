@@ -284,7 +284,7 @@ ul{
     margin-right: 200px;  
 }
 nav{
-    display: none;
+    display: block;
     position: absolute;
     margin-top: -700px;
     line-height: 40px;
