@@ -185,8 +185,8 @@ h2.title{
     color: #373434;
 }
 .waiting_imgmy{
-    width: 250px;
-    height: 364px;
+    width: 330px;
+    height: 200px;
     margin: 0 5px;
 }
 .plus{
@@ -194,7 +194,7 @@ h2.title{
     height: 364px;
 }
 .my1{
-    margin-top: -60px;
+    margin: -230px 0 0 0; 
 }
 nav{
     margin: 0;
@@ -237,7 +237,7 @@ nav{
         background-repeat: no-repeat;
 }
 .my1{
-    margin-top: 1080px;
+    margin-top: 550px;
 }
 .more .more_img{
     display: block;
@@ -293,23 +293,17 @@ nav{
 
 .my-flex-block{
     width: 364px;
-    height: 400px;
+    height: 250px;
     
     text-align: center;
     color: #000;
 }
 .waiting_imgmy{
     width: 300px;
-    height: 364px;
+    height: 200px;
     margin: 0 20px;
 }
-.plus{
-    height: 214px;
-    margin: 40px 0 0 0;
-}
-.plus_descr{
-    margin: 0 50px 0px 50px;
-}
+
 ul li{
     overflow: hidden;
     background-color: yellow;
@@ -353,7 +347,6 @@ nav{
     position: fixed; /*фиксированное положение*/
     z-index: 100; /*ориентация выше всех*/
  }
- 
 .gamburger:hover>nav{
     display: block;
    /*  transform: rotate(0deg); */
@@ -370,7 +363,7 @@ nav a{
     padding-left: 10px;  
     font-weight: bold; 
     text-decoration: none;
-   color:#000;
+    color:#000;
 }
 li a:hover{
 background-color:fuchsia;
