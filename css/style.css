@@ -84,7 +84,7 @@ h2.title{
 }  
 
 .waiting{
-    height: 1708px;
+    height: 2808px;
     background-color: rgb(166, 192, 192);
     padding: 85px 0 75px 0;
 }   
@@ -196,7 +196,53 @@ h2.title{
 .my1{
     margin: -230px 0 0 0; 
 }
+.my2{
+    margin: -230px 0 0 0; 
+}
+.my3{
+    margin: -230px 0 0 0; 
+}
+.my4{
+    margin: -230px 0 0 0; 
+}
+.my5{
+    margin: -230px 0 0 0; 
+}
+.my6{
+    margin: -230px 0 0 0; 
+}
+.my7{
+    margin: -230px 0 0 0; 
+}
+.my8{
+    margin: -230px 0 0 0; 
+}
 
+nav{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 2px solid #0066FF;
+    border-radius: 20px 5px;
+    width: 1150px;
+    text-align: center;
+    background-color: #33ADFF;
+    margin-top: 11px;
+  }
+  nav li { display: inline; margin: 30px; }
+  nav a {
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+  }
+  nav a:hover {
+    border-radius: 20px 5px;
+    background-color: #0066FF;
+  }
+  p{visibility: hidden;}
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @media(max-width:379px) {
@@ -215,13 +261,35 @@ h2.title{
 .my1{
     margin-top: 550px;
 }
+.my2{
+    margin-top: 550px;
+}
+.my3{
+    margin-top: 550px;
+}
+.my4{
+    margin-top: 550px;
+}
+.my5{
+    margin-top: 550px;
+}
+.my6{
+    margin-top: 550px;
+}
+.my7{
+    margin-top: 550px;
+}
+.my8{
+    margin-top: 550px;
+}
+
 .more .more_img{
     display: block;
     margin: 0 auto;
     margin-top: -15px;
 }
 .waiting{
-    height: 5008px;
+    height: 9508px;
     background-color: rgb(184, 230, 230);
     padding: 85px 0 75px 0;
 }
@@ -298,7 +366,7 @@ nav{
     line-height: 60px;
     top: 720px;
     /* right: 200px; */
-    width: 100px;
+    width: 200px;
     
     transition: all .5s ease-in-out;
    
@@ -315,7 +383,7 @@ nav{
     background-color:#f9bf3b;
     margin-left: 20px;
     background-color: #f9bf3b;
-    top: -800px;
+    top: -750px;
    
                 
  }
@@ -335,11 +403,11 @@ nav{
     transition: all .9s ease-in-out;
 }
 
-a{
+nav a{
     padding-left: 10px;  
     font-weight: bold; 
     text-decoration: none;
-   
+    color:#000;
 }
 li a:hover{
 background-color:fuchsia;
@@ -348,6 +416,7 @@ background-color:fuchsia;
 }
 p{
     text-align: center;
+    visibility: visible;
 }
 
 }
