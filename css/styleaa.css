@@ -418,6 +418,7 @@ nav{
     margin-left: 20px;
     background-color: #f9bf3b;
     top: -750px;
+    z-index: 5;
    
                 
  }
