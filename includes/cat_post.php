@@ -18,13 +18,13 @@ if(isset($_GET['cat']))
 
    echo "<div style='background: #37E3F2; width: 600px; margin: 0 auto; padding:  10px 10px 10px 10px  ' >
    <h2><a href='detals.php?post=$post_id'>$title</a></h2>
-   <img src='news_images/$image'width='200'height='200'>
+   <a href='../news_images/$image'> <img src='news_images/$image'width='300'height='250'></a>
    <p>$content <a style='color: red;' href='detals.php?post=$post_id'>Полный текст</a></p>
    <hr>
    <p style='color: red;'>Автор:  $author        .Дата публикации:$date</p>
    </hr>
    </div>
-   <background>
+   
    <br>";
 
      }

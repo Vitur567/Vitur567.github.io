@@ -14,7 +14,7 @@
       
     
 
-<link rel="stylesheet"  href="../css/style2.css">
+<link rel="stylesheet"  href="../css/style1.css">
 
      <title>Светин сайт</title>
 </head>
@@ -32,7 +32,7 @@
 <?php include ("includes/nav.php");?>
 
    		</ul><!--nav closed-->
-
+<!-- Форма поиска=================================== -->
    		<div id="form">
    			<form method="get" action="result.php" enctype="multipart/form-data">
    			<input style="border-radius: 7px;" type="text" name="searchquery">
@@ -45,13 +45,20 @@
    	<div class="postarea"><!--postarea open-->
 
 <?php $datenew =  date('l jS \of F Y h:i:s ');
-echo $datenew;  
+$prob = '  ';
+echo "<div style = 'background-color: #e2f28683; font-size: 12px;'>Время когда Вы зашли на сайт: $prob &nbsp;$datenew</div>";  
  ?>
    		<div class="sta"><!--sta open-->
 
    		<?php include("includes/content.php");?>
 
    		</div><!--sta closed -->
+
+		   <div class="sta1"><!--sta open-->
+
+<?php include("includes/content1.php");?>
+
+</div><!--sta closed -->
    		
    	</div><!--postarea closed-->
 

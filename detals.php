@@ -6,7 +6,7 @@ include("functions/connect.php");
 	<head>
 	
     
-<link rel="stylesheet"  href="css/style2.css">
+<link rel="stylesheet"  href="css/style1.css">
 
      <title>simple_site</title>
 </head>
@@ -18,7 +18,7 @@ include("functions/connect.php");
 		<img id="logo" src="img/Log1.png">
 		
 	</div>
-</div>
+
 
 <!--<div class="barmenu" style="padding-left: 0px; margin-left: 200px;">--barmenu open --
 
@@ -36,7 +36,7 @@ include("functions/connect.php");
    		
    	</div>--barmenu closed-->
 
-   	<div class="barmenu1" style = 'margin-left: 546px;' >
+   	<div class="barmenu"  >
    		<ul id="menu">
 <?php include ("includes/nav.php");?>
 
@@ -58,10 +58,10 @@ while ($ro = mysqli_fetch_array($run)) {
     $post_image = $ro['post_image'];
     $post_content = $ro['post_content'];
 
-    echo "<div class='sta'>
+    echo "<div class='fon'>
           <h2 style='color: red;'>$post_title</h2>
       <a href='news_images/$post_image'>   <img src='news_images/$post_image'width='300'height='300'></a> 
-          <p>$post_content</p>
+          <p style='displai: block;'>$post_content</p>
           <span style='color: red;'>Опубликовал статью:<i><b>$post_author</b></i>&nbsp;&nbsp;</span>
           </div>
     ";
@@ -73,11 +73,11 @@ while ($ro = mysqli_fetch_array($run)) {
 //  include("includes/comments_form.php");
  ?>
 <div class="comments"><!--Comments-->
-	<form action="detals.php?post=<?php echo $post_new_id ?>" method="post">
-		<input type="text" name="comment_name"><br>
-		<input type="text" name="comment_email"><br>
+	<form action="detals.php?post=<?php echo $post_new_id ?>" method="post" style = "background-color: wheat;border-radius: 20px;">
+		<input type="text" name="comment_name" style = "margin: 10px;"><br>
+		<input type="text" name="comment_email" style = "margin: 0 10px 10px;" ><br>
 		<textarea name="comment_text" cols="50" rows="10"></textarea><br>
-		<input type="submit" name="submit" value="Добавь комментарий">		
+		<input type="submit" name="submit" value="Добавь комментарий" style = "margin: 0 0px 0px 100px;">		
 	</form>
 	
 </div><!-- Comments-->
@@ -121,15 +121,15 @@ else
 
 ?>
 <?php 
-
+$nom = 0;
 
     $zq = "select * from comments where post_id='$post_new_id' AND status='approve'";
     $q = mysqli_query($con,$zq);
     echo"<br><br>";
     while($row = mysqli_fetch_array($q))
     {
-
-    	echo"<h2 style='margin-left: 50px;'>$post_new_id</h2>";
+$nom++;
+    	echo"<h2 style='margin-left: 50px;'>$nom</h2>";
     	echo"<a style='color: red;padding:  10px 10px 10px 170px '>Имя:_____</a>";
     	
        echo $row['comment_name'];
@@ -142,13 +142,13 @@ else
 
 ?>
 
-<div class="foterarea" style ='margin-left: 543px;'><!--foterarea open-->
+<div class="foterarea" ><!--foterarea open-->
    	
    	<?php include("includes/footer.php");?>	
    		
    	</div><!--foterarea closed-->
    	
-
+</div>
 	</body>
 
 

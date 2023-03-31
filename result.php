@@ -14,7 +14,7 @@
       
     
 
-<link rel="stylesheet"  href="../css/style2.css">
+<link rel="stylesheet"  href="../css/style1.css">
 
      <title>Результат</title>
 </head>
@@ -50,12 +50,12 @@ if(isset($_GET['search']))
 {
     $get_query = $_GET['searchquery'];
     $select = "select * from post where post_title like '%$get_query%'";
-   
+                                      /*  мы ищем по полю 'post_title' но можно по 'post_keywords' */
     $q = mysqli_query($con,$select);
   
 
     while ($row = mysqli_fetch_array($q)) {
-      if($row){
+   //   if($row){
    $category_id = $row['category_id'];
    $post_id = $row['post_id'];
    $title = $row['post_title'];
@@ -66,16 +66,16 @@ if(isset($_GET['search']))
  echo"<br/>";
    echo "<div style='background: #37E3F2; width: 600px; margin: 0 auto; padding:  10px 10px 10px 10px  ' >
    <h2><a href='detals.php?post=$post_id'>$title</a></h2>
-   <img src='news_images/$image'width='200'height='200'>
+   <img src='news_images/$image'width='300'height='250'>
    <p>$content <a style='color: red;' href='detals.php?post=$post_id'>Полный текст</a></p>
    <hr>
    <p style='color: red;'>Автор:  $author        .Дата публикации:$date</p>
    </hr>
    </div>
-   <background>
+   
    <br>";
 
-    }else{echo "<script>alert('Ничего не найдено!')</script>";}
+  //  }else{echo "<script>alert('Ничего не найдено!')</script>";}
    }
 
     }

@@ -1,6 +1,6 @@
 <?php include 'functions/connect.php';?>
 
-<a href="index.php">Домой</a>
+<a href="ind.php">Домой</a>
 <!doctype html>
     <html lang="ru">
     <head>
@@ -9,7 +9,7 @@
       
     
 
-<link rel="stylesheet"  href="css/style1.css">
+<link rel="stylesheet"  href="css/style.css">
 
      <title>Светин сайт</title>
 </head>
@@ -20,7 +20,7 @@ while ($row = mysqli_fetch_array($query)) {
     
     $catid = $row['cat_id'];
     $cattitle = $row['cat_title'];
-    echo "<li><a href='index.php?cat=$catid'>$cattitle</a></li>";
+    echo "<li><a href='ind.php?cat=$catid'>$cattitle</a></li>";
 }
 
 
