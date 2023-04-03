@@ -7,8 +7,8 @@ body
 }
 .sta
 {
-	display: flex;
-	justify-content: space-evenly ;
+	
+	
 	width: 700px;
 	border-radius: 12px;
 	padding: 10px 10px 10px 10px;
@@ -17,25 +17,9 @@ body
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-.sta1{
+.star{
 	display: flex;
-	justify-content: space-evenly ;
-	width: 700px;
-	border-radius: 12px;
-	padding: 10px 10px 10px 10px;
-	margin: auto;
-	background-color: #C0FFFD;
-	margin-top: 5px;
-	margin-bottom: 5px;	
-}
-.fon{
-	width: 700px;
-	border-radius: 12px;
-	padding: 10px 10px 10px 10px;
-	margin: auto;
-	background-color: #C0FFFD;
-	margin-top: 5px;
-	margin-bottom: 5px;	
+	justify-content: space-between;
 }
 .container
 {

@@ -9,7 +9,7 @@
       
     
 
-<link rel="stylesheet"  href="css/style.css">
+<link rel="stylesheet"  href="css/style1.css">
 
      <title>Светин сайт</title>
 </head>

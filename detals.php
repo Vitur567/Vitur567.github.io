@@ -43,6 +43,8 @@ include("functions/connect.php");
 	</ul>
 </div>
 
+
+
 <?php
 if (isset($_GET['post'])) {              /*  у нас есть переменной 'post' */
 	$post_id = $_GET['post'];           /*   при помощи GET получаем значение переменной  */
@@ -58,7 +60,7 @@ while ($ro = mysqli_fetch_array($run)) {
     $post_image = $ro['post_image'];
     $post_content = $ro['post_content'];
 
-    echo "<div class='fon'>
+    echo "<div class='sta1'>
           <h2 style='color: red;'>$post_title</h2>
       <a href='news_images/$post_image'>   <img src='news_images/$post_image'width='300'height='300'></a> 
           <p style='displai: block;'>$post_content</p>
@@ -73,11 +75,19 @@ while ($ro = mysqli_fetch_array($run)) {
 //  include("includes/comments_form.php");
  ?>
 <div class="comments"><!--Comments-->
-	<form action="detals.php?post=<?php echo $post_new_id ?>" method="post" style = "background-color: wheat;border-radius: 20px;">
-		<input type="text" name="comment_name" style = "margin: 10px;"><br>
-		<input type="text" name="comment_email" style = "margin: 0 10px 10px;" ><br>
+<?php 
+   $zapros = "select * from comments where post_id='$post_new_id' AND status='approve'";
+   $q = mysqli_query($con,$zapros);
+   $count = mysqli_num_rows($q);
+   echo"Комментариев:...(".$count.")";
+
+?>
+
+	<form action="detals.php?post=<?php echo $post_new_id ?>" method="post">
+		<input type="text" name="comment_name" placeholder="Ваше имя..."><br>
+		<input type="text" name="comment_email" placeholder="Ваш E-mail..."><br>
 		<textarea name="comment_text" cols="50" rows="10"></textarea><br>
-		<input type="submit" name="submit" value="Добавь комментарий" style = "margin: 0 0px 0px 100px;">		
+		<input type="submit" name="submit" value="Добавь комментарий">		
 	</form>
 	
 </div><!-- Comments-->
@@ -121,15 +131,25 @@ else
 
 ?>
 <?php 
-$nom = 0;
+
 
     $zq = "select * from comments where post_id='$post_new_id' AND status='approve'";
     $q = mysqli_query($con,$zq);
     echo"<br><br>";
     while($row = mysqli_fetch_array($q))
     {
-$nom++;
-    	echo"<h2 style='margin-left: 50px;'>$nom</h2>";
+		$name = $row['comment_name'];
+		$text = $row['comment_text'];
+        echo"
+		<br>
+		<div style='width:350px; height:100%; background-color: #56E5DE;
+		border-radius: 10px; margin: 0 auto; padding: 10px 10px 10px 10px'>
+		<p><span style='color:red;'>Имя:________</span>$name</p>
+		<p><span style='color:red;'>Комментарий:________</span><i>$text</i></p>
+		</div>
+		";
+
+    	echo"<h2 style='margin-left: 50px;'>$post_new_id</h2>";
     	echo"<a style='color: red;padding:  10px 10px 10px 170px '>Имя:_____</a>";
     	
        echo $row['comment_name'];
@@ -139,6 +159,9 @@ $nom++;
      // echo" <br><br>";
       echo"<hr>";
     }
+
+?>
+<?php
 
 ?>
 

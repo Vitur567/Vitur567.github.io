@@ -53,12 +53,6 @@ echo "<div style = 'background-color: #e2f28683; font-size: 12px;'>Время к
    		<?php include("includes/content.php");?>
 
    		</div><!--sta closed -->
-
-		   <div class="sta1"><!--sta open-->
-
-<?php include("includes/content1.php");?>
-
-</div><!--sta closed -->
    		
    	</div><!--postarea closed-->
 
